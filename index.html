@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <div class="area">
+        
+
+        <div class="calculadora">
+            
+            <h1>Calculadora</h1>
+            <br>
+            <input id="n1" type="number">
+            <br>
+            <input id="n2" type="number">
+        
+            <br>
+
+            <div class="botoes">
+       
+                <button onclick="somar()">+</button>
+                <button onclick="subtrair()">-</button>
+                <button onclick="multiplicar()">x</button>
+                <button onclick="dividir()">/</button>
+
+                <br>
+
+                <button onclick="limpar()">Limpar</button>
+
+            </div>
+
+            <div id="resultado">
+                <h3> O resultado é: <span id="span_resultado"></span> </h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
