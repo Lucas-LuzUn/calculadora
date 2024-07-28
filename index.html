@@ -1,99 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
 
-    <title>CALCULADORA</title>
+    <title>Calculadora</title>
 </head>
 <body>
-    <div class="area">
-        
 
-        <div class="calculadora">
-            
-            <h1>Calculadora</h1>
-            <br>
-            <input id="n1" type="number">
-            <br>
-            <input id="n2" type="number">
-        
-            <br>
+    <div id="calculadora">
 
-            <div class="botoes">
-       
-                <button onclick="somar()">+</button>
-                <button onclick="subtrair()">-</button>
-                <button onclick="multiplicar()">x</button><!DOCTYPE html>
-                <html lang="pt-BR">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                
-                    <link rel="stylesheet" href="style.css">
-                
-                    <title>Calculadora</title>
-                </head>
-                <body>
-                
-                    <div id="calculadora">
-                
-                            <h1 id="titulo">Calculadora</h1>
-                            <p id="display_resultado"></p>
-                
-                        <table id="area_botoes">
-                            <tr class="coluna">
-                                <td><button class="botao_operacoes" onclick="limpar()">C</button></td>
-                                <td><button class="botao_operacoes" onclick="apagar()"><</button></td>
-                                <td><button class="botao_operacoes" onclick="insert('/')">/</button></td>
-                                <td><button class="botao_operacoes" onclick="insert('*')">x</button></td>
-                            </tr>
-                
-                            <tr>
-                                <td><button onclick="insert(7)">7</button></td>
-                                <td><button onclick="insert(8)">8</button></td>
-                                <td><button onclick="insert(9)">9</button></td>
-                                <td><button class="botao_operacoes" onclick="insert('-')">-</button></td>
-                            </tr>
-                
-                            <tr>
-                                <td><button onclick="insert(4)">4</button></td>
-                                <td><button onclick="insert(5)">5</button></td>
-                                <td><button onclick="insert(6)">6</button></td>
-                                <td><button class="botao_operacoes" onclick="insert('+')">+</button></td>
-                            </tr>
-                
-                            <tr>
-                                <td><button onclick="insert(1)">1</button></td>
-                                <td><button onclick="insert(2)">2</button></td>
-                                <td><button onclick="insert(3)">3</button></td>
-                                <td rowspan="2"><button id="botao_result"  onclick="calcular()">=</button></td>
-                            </tr>
-                
-                            <tr>
-                                <td colspan="2"><button id="botao_zero" onclick="insert(0)">0</button></td>
-                                <td><button class="botao_operacoes" onclick="insert('.')">.</button></td>
-                            </tr>
-                        </table>
-                    </div>
-                
-                    <script src="script.js"></script>
-                </body>
-                </html>
-                <button onclick="dividir()">/</button>
+            <h1 id="titulo">Calculadora</h1>
+            <p id="display_resultado"></p>
 
-                <br>
+        <table id="area_botoes">
+            <tr class="coluna">
+                <td><button class="botao_operacoes" onclick="limpar()">C</button></td>
+                <td><button class="botao_operacoes" onclick="apagar()"><</button></td>
+                <td><button class="botao_operacoes" onclick="insert('/')">/</button></td>
+                <td><button class="botao_operacoes" onclick="insert('*')">x</button></td>
+            </tr>
 
-                <button onclick="limpar()">Limpar</button>
+            <tr>
+                <td><button onclick="insert(7)">7</button></td>
+                <td><button onclick="insert(8)">8</button></td>
+                <td><button onclick="insert(9)">9</button></td>
+                <td><button class="botao_operacoes" onclick="insert('-')">-</button></td>
+            </tr>
 
-            </div>
+            <tr>
+                <td><button onclick="insert(4)">4</button></td>
+                <td><button onclick="insert(5)">5</button></td>
+                <td><button onclick="insert(6)">6</button></td>
+                <td><button class="botao_operacoes" onclick="insert('+')">+</button></td>
+            </tr>
 
-            <div id="resultado">
-                <h3> O resultado é: <span id="span_resultado"></span> </h3>
-            </div>
-        </div>
+            <tr>
+                <td><button onclick="insert(1)">1</button></td>
+                <td><button onclick="insert(2)">2</button></td>
+                <td><button onclick="insert(3)">3</button></td>
+                <td rowspan="2"><button id="botao_result"  onclick="calcular()">=</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><button id="botao_zero" onclick="insert(0)">0</button></td>
+                <td><button class="botao_operacoes" onclick="insert('.')">.</button></td>
+            </tr>
+        </table>
     </div>
 
     <script src="script.js"></script>
