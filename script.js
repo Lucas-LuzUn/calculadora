@@ -1,31 +1,26 @@
-var n1 = document.querySelector('#n1')
-var n2 = document.querySelector('#n2')
-
-var resultado =  document.querySelector('span')
-
-function somar()
-    {
-        resultado.innerHTML = parseInt(n1.value) + parseInt(n2.value)
-    }
-
-function subtrair()
-    {
-        resultado.innerHTML = parseInt(n1.value) - parseInt(n2.value)
-    }
-
-function multiplicar()
-    {
-        resultado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
-    }
-
-function dividir()
-    {
-        resultado.innerHTML = parseInt(n1.value) / parseInt(n2.value)
-    }
+function insert(num)
+{
+    var numero = document.getElementById("display_resultado").innerHTML;
+    document.getElementById("display_resultado").innerHTML = numero + num;
+}
 
 function limpar()
 {
-    document.getElementById('n1').value = "";
-    document.getElementById('n2').value = "";
-    resultado.innerHTML = "";
+    document.getElementById("display_resultado").innerHTML = "";
+}
+
+function apagar()
+{
+    var resultado = document.getElementById("display_resultado").innerHTML;
+    document.getElementById("display_resultado").innerHTML = resultado.substring(0, resultado.length -1)
+}
+
+function calcular()
+{
+    var resultado = document.getElementById("display_resultado").innerHTML;
+
+    if(resultado)
+    {
+        document.getElementById("display_resultado").innerHTML = eval(resultado)  
+    }
 }
